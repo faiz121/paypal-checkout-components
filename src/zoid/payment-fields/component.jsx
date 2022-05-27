@@ -121,13 +121,25 @@ export function getPaymentFieldsComponent() : PaymentFieldsComponent {
                     type:     'function',
                     required: false
                 },
+                onError: {
+                    type:     'function',
+                    required: false
+                },
 
                 onContinue: {
                     type:     'function',
                     required: false
                 },
-
-                createOrder: {
+                onClose: {
+                    type:     'function',
+                    required: false
+                },
+                showActionButtons: {
+                    type:       'boolean',
+                    queryParam: true,
+                    required:   false
+                },
+                onFieldsClose: {
                     type:     'function',
                     required: false
                 },
